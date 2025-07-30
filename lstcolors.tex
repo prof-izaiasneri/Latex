@@ -1,0 +1,57 @@
+
+% ********************************************************
+% **** Trabalhar com códigos de programação em Python ****
+% ********************************************************
+
+% Para definição das cores acesse o site => http://latexcolor.com/
+% Definindo as cores
+\definecolor{mygreen}{rgb}{0,0.6,0} 
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+
+% Para usar em códigos Python
+\lstdefinestyle{mypython}{ 
+		backgroundcolor=\color{cyan!10}, % choose the background color
+		basicstyle=\large, % size of fonts used for the code
+		breaklines=true,   % automatic line breaking only at whitespace
+		captionpos=b,      % sets the caption-position to bottom
+		commentstyle=\color{mygreen}, % comment style
+		escapeinside={\%*}{*)},       % if you want to add LaTeX within your code
+		keywordstyle=\color{blue},    % keyword style
+		stringstyle=\color{mymauve},  % string literal style
+		tabsize = 1,				  % Altera a posição inicial do código
+		% emphstyle=\color{red},
+		showstringspaces=false,		  % Tira o 'risco' dos espaços.
+		inputencoding=utf8/latin1,
+		literate={ó}{{\'o}}1 {Ó}{{\'O}}1 {ã}{{\~a}}1 {ç}{{\c c}}1 {á}{{\' a}}1 {é}{{\' e}}1 {ú}{{\' u}}1 {ê}{{\^ e}}1, 
+}
+% **** Trabalhar com códigos de programação em Python ****
+
+
+% Para usar em códigos C
+\lstdefinestyle{myc}{
+	inputencoding=utf8/latin1,
+	backgroundcolor=\color{backcolour},   
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\ttfamily\footnotesize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                 
+	numbers=left,                    
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2,
+	literate={ó}{{\'o}}1 {Ó}{{\'O}}1 {ã}{{\~a}}1 {ç}{{\c c}}1 {á}{{\' a}}1 {é}{{\' e}}1 {ú}{{\' u}}1 {ê}{{\^ e}}1, 
+}

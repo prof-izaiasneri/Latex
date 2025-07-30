@@ -1,0 +1,104 @@
+% Arquivo usado como padrão para todos os arquivos LaTex
+% Criado em 17/12/22 às 18h00
+
+% Preâmbulo necessário
+\usepackage[portuguese]{babel}
+%\usepackage[brazilian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{xcolor}
+\usepackage{mdframed} % Pacote que dá cor e bordas aos textos
+\usepackage{pdfpages} % Pacote para auxiliar incluir pdf externo ao documento
+\usepackage{titlesec} % Pacote que auxilia a troca de caracteristicas do section
+
+\usepackage{enumerate} % Pacote que permite alterar os itens do enumerate
+\usepackage{pgfplots} % Pacote de plotar gráficos
+\usepackage{tikz} % Pacote para desenho
+\usepackage{booktabs} % Pacote para usar as tabelas exportadas do excel
+\usepackage{multirow} % Pacote para mesclar linhas em tabelas
+\usepackage{wrapfig} % Pacote para inserir figuras e texto lado a lado
+\usepackage{multicol} % Pacote para inserir colunas
+%\usepackage[x11names]{xcolor} % Pacote para inserir sombreamento
+% \setlength{\columnsep}{1cm} % Dá uma maior separação nos textos em colunas
+
+\everymath{\displaystyle} % Faz com que os símbolos matemáticos fiquem "melhores" ..tipo insere o limite com x \to abaixo do lim
+
+\graphicspath{{img/}} % Fixa a pasta img para o caminho das imagens quando está na raiz do projeto.
+
+
+\usepackage{graphicx,color} % Pacote necessário para inserção de figuras e textos coloridos
+
+\usepackage{indentfirst} % Pacote que insere espaço de parágrafo
+\usepackage{setspace} % Pacote necessário para espaçamento entre linhas \singlespacing (simples) \onehalfspacing (1.5) \doublespacing (2.0)
+\linespread{1.5}% Espaçamento entre as linhas de 1.5 
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=3cm]{geometry}
+%\usepackage{caladea} % Um tipo de fonte
+\usepackage{arev} % Fonte para todo corpo de texto
+\usepackage{arevmath} % Mesma fonte do corpo de texto para as fórmulas
+\usepackage[normalem]{ulem} % Serve para hifenizar melhor
+%\pagestyle{headings} % Serve para colocar numeração na parte superior
+\usepackage{lipsum} % Usado para inserir texto falso com o comando \lipsum[num-num]
+\usepackage{cancel} % Faz o 'cancelado' \ em equações
+
+
+% Abre um ambiente Quadro igual os de tabela
+\usepackage{trivfloat}
+% \trivfloat{quadro} % Pode usar assim e fazer com que a palavra 'quadro' seja o nome do ambiente
+
+% Quando compilado para pdf esse pacote fará o indice ficar com link
+\usepackage[colorlinks=true, pdfstartview=FitV, linkcolor=black,citecolor=black, urlcolor=black]{hyperref}
+
+% Esse comando altera o formato e cor das \section 
+\titleformat{\section}{\color{blue}\large\bfseries}{\color{red}\thesection}{0.5em}{}
+%\titleformat{\subsection}{\color{black}\Large\bfseries}{\color{red}\thesection}{0.5em}{}
+
+\usepackage{fancyhdr} % Altera formato de cabeçalho, rodapé e capítulos
+
+% A opção é o tipo de formatação que queremos usar:
+% Sonny;	% Lenny;	% Glenn;	% Rejne;	% Bjarne;	% Bjornstrup
+
+%\usepackage[Conny]{fncychap}
+\usepackage[Sonny]{fncychap}
+%\usepackage[Glenn]{fncychap}
+%\usepackage[Rejne]{fncychap}
+%\usepackage[Bjarne]{fncychap}
+%\usepackage[Bjornstrup]{fncychap}
+%\usepackage[Lenny]{fncychap}
+
+
+% **** Trabalhar com códigos de programação em Python ****
+\usepackage{listingsutf8}
+\usepackage{listings} % Para trabalhar com códigos de programação.
+
+
+%\lstset{language=Python} % Escolhendo a linguagem
+
+
+
+% Novos comandos para otimizar a escrita
+\newcommand{\rr}{\mathbb{R}^2}
+\newcommand{\rrr}{\mathbb{R}^3}
+\newcommand{\R}{\mathbb{R}}
+
+% Vetor combinação linear : inserir apenas uma letra \vcl{p}
+\newcommand{\vcl}[1]{\overrightarrow{#1} = \overrightarrow{#1_1} + \overrightarrow{#1_2} + \cdots + \overrightarrow{#1_n} }
+
+\newcommand{\matriz}[4]{\begin{bmatrix} #1 & #2\\ #3 & #4 \end{bmatrix}}
+\newcommand{\vet}[1]{\overrightarrow{#1}}
+
+% Casos especiais de vetores u, v e w
+\newcommand{\vetu}{\overrightarrow{u}}
+\newcommand{\vetv}{\overrightarrow{v}}
+\newcommand{\vetw}{\overrightarrow{w}}
+
+% Quando usar o arquivo teo.tex para o pacote mdframed 
+\newtheorem{deff}{Definição}[section]
+\newtheorem{exe}{Exemplo}[section]
+\newtheorem{teorema}{Teorema}[section]
+%\newtheorem{exer}{Exercício}[section]
+
+

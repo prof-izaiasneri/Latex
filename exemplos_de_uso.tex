@@ -1,0 +1,56 @@
+\documentclass[11pt,a4paper]{article}
+\input{new_estrutura}
+\input{theo}
+\input{lstcolors}
+\pagestyle{fancy}
+
+\lhead{Testando}
+\rhead{Lista}
+\rfoot{www.professorizaiasneri.com.br}
+
+
+\begin{document}
+	Este é um teste em \LaTeX
+
+\section{Usando o pacote mdframed}
+	\begin{mdframed}[style=exemplos]
+		Este é um apenas 
+	\end{mdframed}
+
+\begin{mdframed}[style=teoremas]
+	Teorema sem estilo
+\end{mdframed}
+
+\begin{mdframed}[style=definicao]
+	Esta é uma definição de .. 	
+\end{mdframed}
+
+\begin{mdframed}[style=qrcodes]
+	Insira o qr aqui .. 
+\end{mdframed}
+	
+	\section{Usando o pacote para linguagens de programação }
+	\subsection{Testando a subseção}
+	
+	\lstset{style=mypython}
+	 \begin{lstlisting}[language=Python]
+	 	a = 2
+	 	b = 3
+	 	print(a)
+	 	print(b)
+	 	for i in range(6):
+	 	# exemplo de comentário
+	 	    a.list(b)
+	 \end{lstlisting}
+ 
+	\lstset{style=myc}
+	\begin{lstlisting}[language=C]
+		#include<stdio.h>
+		int a;
+		for (int i = 0; i < 10; i++){
+			printf("%d",i);
+		}
+	\end{lstlisting}
+	
+	
+\end{document}
